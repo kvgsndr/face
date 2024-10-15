@@ -2,7 +2,7 @@ import cv2
 
 face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
-def max_arc(faces): 
+def max_arc(faces): #az adott arcok közül kiválasztja a legnagyobbat
     mx=(0,0,0,0)
     if len(faces)>0:
         for f in faces: # legnagyobb területű kép
